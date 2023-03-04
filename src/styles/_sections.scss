@@ -1,0 +1,79 @@
+// Sections
+
+#testimonials,
+#pageTitle {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+#notFound {
+  background-color: $color-primary-dark;
+}
+
+#pageTitle {
+  color: $color-secondary-3;
+  background-attachment: fixed;
+  clip-path: ellipse($section-round-border 100% at top);
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#notFound {
+  div,
+  p {
+    color: white;
+  }
+}
+
+#testimonials {
+  h2 {
+    text-align: center;
+  }
+}
+
+#about {
+  .row {
+    align-items: center;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.col {
+  &-images {
+    position: relative;
+    height: 100%;
+    .imgLeft,
+    .imgRight {
+      height: 80%;
+      max-height: 480px;
+      width: 55%;
+      position: absolute;
+      border-radius: $radius-basis;
+      background-position: center;
+      background-size: cover;
+    }
+    .imgLeft {
+      top: 0;
+      left: 0;
+    }
+    .imgRight {
+      bottom: 0px;
+      right: 0px;
+    }
+    @include for-size(sm) {
+      .imgLeft,
+      .imgRight {
+        position: static;
+        width: 100%;
+        height: 320px;
+      }
+      .imgLeft {
+        margin-bottom: space(1);
+      }
+    }
+  }
+}

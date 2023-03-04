@@ -1,0 +1,85 @@
+.card {
+  background-color: white;
+  border-radius: $radius-basis;
+  overflow: hidden;
+  min-width: 240px;
+  .body {
+    padding: space(1);
+  }
+  h3,
+  .lead {
+    margin-bottom: 0;
+  }
+  .photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  &-light {
+    .head {
+      height: 240px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .body {
+      background-color: $color-secondary-3;
+      height: 100%;
+    }
+    .row {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: space(1);
+    }
+    button {
+      margin-top: space(1);
+    }
+  }
+  &-testimonial {
+    box-shadow: $shadow-base;
+    img {
+      border-radius: 100%;
+    }
+    .author {
+      align-items: center;
+      .name {
+        margin-left: space(0.5);
+      }
+    }
+    .stars {
+      margin-bottom: $spacing-base;
+      svg {
+        height: 24px;
+        color: $color-primary-light;
+      }
+    }
+    .content {
+      margin: $spacing-base 0;
+    }
+  }
+  &-booking-recap {
+    position: relative;
+    background-size: cover;
+    .body {
+      position: relative;
+      z-index: 2;
+    }
+    h3 {
+      margin-bottom: space(0.5);
+      &:not(:first-child) {
+        margin-top: space(1);
+      }
+    }
+    .bg-overlay.light {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    ul {
+      margin-left: 0 !important;
+    }
+    li {
+      list-style: none !important;
+    }
+  }
+}

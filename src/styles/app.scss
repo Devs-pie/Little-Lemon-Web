@@ -1,0 +1,19 @@
+// Parts
+@import "./functions";
+@import "./mixins";
+@import "./variables";
+@import "./layout";
+@import "./typography";
+@import "./header";
+@import "./sections";
+@import "./footer";
+@import "./card";
+@import "./buttons";
+@import "./form";
+@import "./popup";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

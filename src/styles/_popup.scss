@@ -1,0 +1,117 @@
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(2, 2, 2, 0.8);
+  z-index: 99;
+  transition: all 0.3s;
+  .card {
+    height: 100%;
+  }
+  &-container {
+    position: relative;
+    width: $popup-width;
+    height: $popup-height;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: $radius-basis;
+    .content {
+      height: 100%;
+      width: 100%;
+      padding: space(2);
+      overflow-x: hidden;
+    }
+    h3 {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      margin-bottom: space(3);
+    }
+    h4 {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+    }
+    .close {
+      position: absolute;
+      top: space(1);
+      right: space(1.5);
+      transition: transform 0.3s;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+    ul {
+      margin-left: 18px;
+      margin-bottom: space(1);
+    }
+    li {
+      list-style: disc;
+    }
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+  @include for-size(md) {
+    &-container {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      h3 {
+        text-align: center;
+      }
+      .content {
+        height: auto;
+      }
+    }
+  }
+}
+
+// Google Maps
+
+iframe {
+  border-radius: $radius-basis;
+  border: none;
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+}
+
+#gmaps {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.gmaps {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000;
+  text-align: center;
+  &-sub {
+    overflow: auto;
+    position: absolute;
+    height: 0pt;
+    width: 0pt;
+  }
+}
+
+.nvs {
+  position: relative;
+  text-align: right;
+  height: 325px;
+  width: 643px;
+}
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
+}
