@@ -7,13 +7,7 @@ export default function PageAbout() {
     <>
       <PageTitle title={"About us"} />
       <Plaintext classes="lead">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-        tempore natus ipsum numquam facere. Adipisci ullam, maiores excepturi
-        similique voluptatem cupiditate suscipit mollitia dignissimos ut at
-        deleniti porro tempora qui. Fugiat consectetur sint, veniam at velit
-        doloribus perspiciatis dolor corporis magni qui a voluptate natus est
-        magnam quasi quae vel, fugit tempora impedit ullam! Voluptatem aliquid
-        voluptatibus ea sint quisquam!
+      "Meet the duo behind Little Lemon - John and Michael. These two friends have been passionate about bringing fresh, healthy food to their community since they were teenagers. With over a decade of combined experience in the restaurant industry, they decided to team up and create something special. John brings his expertise in Mediterranean cuisine, while Michael adds his touch of Italian flair. Together, they've created a menu that blends classic and contemporary flavors to delight every palate. When they're not in the kitchen, you'll find them chatting with customers and sharing their love of good food and great company."
       </Plaintext>
       <SectionAbout bg="light" />
     </>

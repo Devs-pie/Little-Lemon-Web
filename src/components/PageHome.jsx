@@ -27,21 +27,21 @@ export default function PageHome({ links }) {
       photo: greekSalad,
       price: "12.99",
       content:
-        "Quaerat eligendi accusamus, ducimus veritatis maiores necessitatibus nobis at amet numquam odio deserunt.",
+      "Fresh and delicious, our Greek Salad is a Mediterranean delight. Made with crisp lettuce, juicy tomatoes, crunchy cucumbers, tangy feta cheese, and drizzled with our signature Greek dressing, it's the perfect light meal or side dish.",
     },
     {
       name: "Bruschetta",
       photo: bruschetta,
       price: "9.99",
       content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate molestias doloremque animi praesentium, ea quasi voluptatibus dolores, quaerat eligendi accusamus.",
+      "Indulge in the vibrant flavors of Italy with our Bruschetta. Crusty artisan bread is topped with juicy, ripe tomatoes, aromatic garlic, and fresh basil, then finished with a drizzle of olive oil and a sprinkle of Parmesan cheese. It's a delicious appetizer or snack that will transport your taste buds to the streets of Rome.",
     },
     {
       name: "Lemon Dessert",
       photo: lemonDessert,
       price: "5.99",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Made with freshly squeezed lemons, creamy mascarpone cheese, and a buttery graham cracker crust, it's the perfect way to end any meal.",
     },
   ];
 
@@ -51,21 +51,21 @@ export default function PageHome({ links }) {
       photo: woman1,
       notation: 5,
       content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate molestias doloremque animi praesentium, ea quasi voluptatibus dolores, quaerat eligendi accusamus, ducimus veritatis maiores.",
+      "The food at Little Lemon is exceptional. I highly recommend the lamb chops - they are cooked to perfection and bursting with flavor. The service is also top-notch and the atmosphere is warm and inviting.",
     },
     {
       name: "P. Marchant",
       photo: man1,
       notation: 4.5,
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Little Lemon is hands down my favorite restaurant in town. The staff is friendly, the ambiance is cozy and charming, and the food is always fresh and delicious. I especially love their bruschetta - it's the perfect combination of sweet and savory.",
     },
     {
       name: "R. Lebois",
       photo: man2,
       notation: 5,
       content:
-        "Cupiditate molestias doloremque animi praesentium, ea quasi voluptatibus dolores, quaerat eligendi accusamus, ducimus veritatis maiores necessitatibus nobis at amet numquam odio deserunt.",
+      "I recently visited Little Lemon for a special occasion and was blown away by the experience. The attention to detail in every dish was remarkable and the presentation was beautiful. The lemon dessert was the perfect ending to a perfect meal. I can't wait to go back.",
     },
   ];
 
@@ -76,9 +76,7 @@ export default function PageHome({ links }) {
           Little Lemon<div>Chicago</div>
         </h1>
         <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod
-          elementum nisi quis.
+        Welcome to Little Lemon, where every dish is a burst of flavor. Our commitment to fresh ingredients and expertly crafted dishes will take your taste buds on a journey you won't soon forget. Come join us and indulge in a culinary experience that will leave you craving for more.
         </p>
         <Link to={links["Booking"]}>
           <Button>Reserve a table</Button>
